@@ -9,8 +9,8 @@ because they can be characterized as having only 2, 3, or 5 as prime factors.
 class Hamming:
     __doc__ = __doc__
 
-    @classmethod
-    def get_nth(self, n):
+    @staticmethod
+    def get_nth(n):
         """
         :param n:   int     nth position
         :return:    int     nth Hamming Nummber
@@ -34,8 +34,8 @@ class Hamming:
                 rk = 5 * table[k]
         return table[-1]
     
-    @classmethod
-    def is_hamming_number(self, n):
+    @staticmethod
+    def is_hamming_number(n):
         """
         :param n:   int     positive integer to test
         :return:    bool    the number is hamming number or not
